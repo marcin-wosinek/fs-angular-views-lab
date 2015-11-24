@@ -8,10 +8,12 @@
  * Controller of the fsAngularViewsLabApp
  */
 angular.module('fsAngularViewsLabApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+  .controller('MainCtrl', function($scope) {
+    $scope.list = [
+      'mouse',
+      'duck'
     ];
+
+    $scope.increaseCounter = function() {
+    };
   });

@@ -9,6 +9,9 @@
 Your work should be done completely in the `app/views/main.html` file. All
 js files are set up in the way that allows your code to pass tests.
 
+Please read `TODO` comments in the `main.html` file - sticking to the hints
+will make it easier to satisfy the tests.
+
 ## Deliverables
 Pass the e2e tests.
 

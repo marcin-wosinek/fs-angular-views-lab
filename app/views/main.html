@@ -12,7 +12,8 @@
 
 <input id="animal" ng-model="animal" />
 
-<p id="animal-1">
+<!-- TODO: hide the element when `animal` is empty -->
+<p id="message">
   There is no animal provided
 </p>
 
@@ -20,4 +21,6 @@
 
 <h1>Events:</h1>
 <p id="conter">{{counter}}</p>
+
+<!-- TODO: fire `increaseCounter` when the button is clicked-->
 <button id="events">Increase counter</button>
