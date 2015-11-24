@@ -20,4 +20,14 @@ describe('Main page', function() {
 
     expect(animalList.getText()).toEqual('mouse\nduck');
   });
+
+  it('should show hide message when animal provided', function() {
+    var counter = element(by.id('counter')),
+      button = element(by.id('button'));
+
+    expect(counter.getText()).toEqual('0');
+
+    button.click();
+    expect(counter.getText()).toEqual('1');
+  });
 });

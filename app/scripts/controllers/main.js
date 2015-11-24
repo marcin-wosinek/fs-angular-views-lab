@@ -15,5 +15,8 @@ angular.module('fsAngularViewsLabApp')
     ];
 
     $scope.increaseCounter = function() {
+      $scope.counter += 1;
     };
+
+    $scope.counter = 0;
   });
