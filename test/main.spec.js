@@ -5,7 +5,7 @@ describe('Main page', function() {
     browser.get('#/main');
   });
 
-  it('show hide message when animal provided', function() {
+  it('should show hide message when animal provided', function() {
     var animal = element(by.model('animal')),
       message = element(by.id('message'));
 
@@ -13,5 +13,11 @@ describe('Main page', function() {
 
     animal.sendKeys('test');
     expect(message.getText()).toEqual('');
+  });
+
+  it('should show all provided animals', function() {
+    var animalList = element(by.id('animal-list'));
+
+    expect(animalList.getText()).toEqual('mouse\nduck');
   });
 });
