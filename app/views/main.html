@@ -1,23 +1,29 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<h1>Loops</h1>
+<p>
+  Know animals:
+</p>
+<ul id="animal-list">
+  <!-- TODO: display all animals, they are listed in `list` array -->
+</ul>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+<hr />
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+<h1>Conditions:</h1>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+<input id="animal" ng-model="animal" />
+
+<p id="animal-1">
+  There is no animal provided
+</p>
+
+<p id="animal-2">
+  <span>Mikey mouse</span>
+  <span>Donald Duck</span>
+  <span>Animal unknown</span>
+</p>
+
+<hr />
+
+<h1>Events:</h1>
+<p id="conter">{{counter}}</p>
+<button id="events">Increase counter</button>
